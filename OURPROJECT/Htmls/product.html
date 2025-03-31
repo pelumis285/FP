@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Cars - Product Page</title>
+  
+  <!-- Link to our custom CSS -->
+  <link rel="stylesheet" href="/OURPROJECT/Css/product.css" >
+  <link rel="stylesheet" href="/OURPROJECT/Global_HF/global.css">
+
+</head>
+<body>
+  <!-- MAIN SECTION: PRODUCT GRID -->
+  <main class="main-content">
+    <!-- TOP CONTROLS: Search & Sort -->
+    <div class="top-controls">
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search vintage cars..." >
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Section Title -->
+      <h2 class="section-title">The Most Searched S.C_Motive History Cars</h2>
+
+      <!-- Sort Dropdown for Price -->
+      <div class="sort-container">
+        <label for="sortSelect">Sort by Price:</label>
+        <select id="sortSelect">
+          <option value="none">None</option>
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- PRODUCTS GRID: 20 Cars -->
+    <div class="products-grid" id="productsGrid">
+      <!-- Example Product Card 1 -->
+      <div class="product-card" data-name="1967 Ford Mustang" data-year="1967" data-desc="A timeless American muscle car featuring a powerful V8 engine and iconic styling." data-price="25000">
+        <img src="../../../images/car1.jpg" alt="Car 1: 1967 Ford Mustang" >
+        <h3>1967 Ford Mustang</h3>
+        <p class="year">Year: 1967</p>
+        <p class="price">$25,000</p>
+        <p class="description">
+          A timeless American muscle car featuring a powerful V8 engine and iconic styling.
+        </p>
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card" data-name="1970 Chevrolet Camaro" data-year="1970" data-desc="Classic GM performance and bold design with a racing heritage." data-price="32000">
+        <img src="../../../images/car2.jpg" alt="Car 2: 1970 Chevrolet Camaro" >
+        <h3>1970 Chevrolet Camaro</h3>
+        <p class="year">Year: 1970</p>
+        <p class="price">$32,000</p>
+        <p class="description">
+          Classic GM performance and bold design with a racing heritage.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card" data-name="1989 BMW M3" data-year="1989" data-desc="A legendary German sports coupe known for its handling and DTM race pedigree." data-price="45000">
+        <img src="../../../images/car3.jpg" alt="Car 3: 1989 BMW M3" >
+        <h3>1989 BMW M3</h3>
+        <p class="year">Year: 1989</p>
+        <p class="price">$45,000</p>
+        <p class="description">
+          A legendary German sports coupe known for its handling and DTM race pedigree.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card" data-name="1990 Nissan Skyline GT-R" data-year="1990" data-desc="Japan’s 'Godzilla' with AWD technology and turbocharged power." data-price="50000">
+        <img src="../../../images/Car4.jpeg" alt="Car 4: 1990 Nissan Skyline GT-R" >
+        <h3>1990 Nissan Skyline GT-R</h3>
+        <p class="year">Year: 1990</p>
+        <p class="price">$50,000</p>
+        <p class="description">
+          Japan’s “Godzilla” with AWD technology and turbocharged power.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card" data-name="1987 Porsche 911" data-year="1987" data-desc="A timeless rear-engine classic with unmistakable styling and thrilling performance." data-price="58000">
+        <img src="../../../images/car5.jpg" alt="Car 5: 1987 Porsche 911" >
+        <h3>1987 Porsche 911</h3>
+        <p class="year">Year: 1987</p>
+        <p class="price">$58,000</p>
+        <p class="description">
+          A timeless rear-engine classic with unmistakable styling and thrilling performance.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card" data-name="1978 Toyota Land Cruiser" data-year="1978" data-desc="A rugged 4x4 icon ready for adventure and off-road exploration." data-price="22000">
+        <img src="../../../images/car6.jpg" alt="Car 6: 1978 Toyota Land Cruiser" >
+        <h3>1978 Toyota Land Cruiser</h3>
+        <p class="year">Year: 1978</p>
+        <p class="price">$22,000</p>
+        <p class="description">
+          A rugged 4x4 icon ready for adventure and off-road exploration.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card" data-name="1975 Datsun 280Z" data-year="1975" data-desc="A Japanese sports coupe blending style, performance, and affordability." data-price="18500">
+        <img src="../../../images/car7.jpg" alt="Car 7: 1975 Datsun 280Z" >
+        <h3>1975 Datsun 280Z</h3>
+        <p class="year">Year: 1975</p>
+        <p class="price">$18,500</p>
+        <p class="description">
+          A Japanese sports coupe blending style, performance, and affordability.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="product-card" data-name="1969 Dodge Charger" data-year="1969" data-desc="A legendary Mopar muscle car made famous on screen and track." data-price="40000">
+        <img src="../../../images/car8.jpg" alt="Car 8: 1969 Dodge Charger" >
+        <h3>1969 Dodge Charger</h3>
+        <p class="year">Year: 1969</p>
+        <p class="price">$40,000</p>
+        <p class="description">
+          A legendary Mopar muscle car made famous on screen and track.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 9 -->
+      <div class="product-card" data-name="1985 Mercedes-Benz 300SL" data-year="1985" data-desc="German luxury and engineering excellence, a timeless roadster for cruising." data-price="27000">
+        <img src="../../../images/car9.jpg" alt="Car 9: 1985 Mercedes-Benz 300SL" >
+        <h3>1985 Mercedes-Benz 300SL</h3>
+        <p class="year">Year: 1985</p>
+        <p class="price">$27,000</p>
+        <p class="description">
+          German luxury and engineering excellence, a timeless roadster for cruising.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 10 -->
+      <div class="product-card" data-name="1980 Land Rover Defender" data-year="1980" data-desc="A British off-road icon with unbeatable ruggedness and style." data-price="35000">
+        <img src="../../../images/car10.jpg" alt="Car 10: 1980 Land Rover Defender" >
+        <h3>1980 Land Rover Defender</h3>
+        <p class="year">Year: 1980</p>
+        <p class="price">$35,000</p>
+        <p class="description">
+          A British off-road icon with unbeatable ruggedness and style.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 11 -->
+      <div class="product-card" data-name="1988 Honda CRX" data-year="1988" data-desc="Lightweight, fuel-efficient hatchback beloved by tuners and enthusiasts." data-price="9500">
+        <img src="../../../images/car11.jpg" alt="Car 11: 1988 Honda CRX" >
+        <h3>1988 Honda CRX</h3>
+        <p class="year">Year: 1988</p>
+        <p class="price">$9,500</p>
+        <p class="description">
+          Lightweight, fuel-efficient hatchback beloved by tuners and enthusiasts.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 12 -->
+      <div class="product-card" data-name="1992 Toyota Supra" data-year="1992" data-desc="A Japanese grand tourer with a smooth inline-six and tuner-friendly platform." data-price="30000">
+        <img src="../../../images/car12.jpg" alt="Car 12: 1992 Toyota Supra" >
+        <h3>1992 Toyota Supra</h3>
+        <p class="year">Year: 1992</p>
+        <p class="price">$30,000</p>
+        <p class="description">
+          A Japanese grand tourer with a smooth inline-six and tuner-friendly platform.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 13 -->
+      <div class="product-card" data-name="1972 Volkswagen Beetle" data-year="1972" data-desc="Iconic 'Bug' design that put the world on wheels; simple and charming." data-price="6500">
+        <img src="../../../images/car13.jpg" alt="Car 13: 1972 Volkswagen Beetle" >
+        <h3>1972 Volkswagen Beetle</h3>
+        <p class="year">Year: 1972</p>
+        <p class="price">$6,500</p>
+        <p class="description">
+          Iconic "Bug" design that put the world on wheels; simple and charming.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 14 -->
+      <div class="product-card" data-name="1971 Chevrolet Chevelle" data-year="1971" data-desc="A cornerstone of American muscle with a robust V8 and classic styling." data-price="34000">
+        <img src="../../../images/car14.jpg" alt="Car 14: 1971 Chevrolet Chevelle" >
+        <h3>1971 Chevrolet Chevelle</h3>
+        <p class="year">Year: 1971</p>
+        <p class="price">$34,000</p>
+        <p class="description">
+          A cornerstone of American muscle with a robust V8 and classic styling.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 15 -->
+      <div class="product-card" data-name="1986 Alfa Romeo Spider" data-year="1986" data-desc="Italian drop-top with a lively twin-cam engine and timeless Pininfarina design." data-price="16000">
+        <img src="../../../images/car15.jpg" alt="Car 15: 1986 Alfa Romeo Spider" >
+        <h3>1986 Alfa Romeo Spider</h3>
+        <p class="year">Year: 1986</p>
+        <p class="price">$16,000</p>
+        <p class="description">
+          Italian drop-top with a lively twin-cam engine and timeless Pininfarina design.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 16 -->
+      <div class="product-card" data-name="1982 Ferrari 308" data-year="1982" data-desc="Magnum P.I.’s favorite, combining exotic styling and spirited performance." data-price="65000">
+        <img src="../../../images/car16.jpg" alt="Car 16: 1982 Ferrari 308" >
+        <h3>1982 Ferrari 308</h3>
+        <p class="year">Year: 1982</p>
+        <p class="price">$65,000</p>
+        <p class="description">
+          Magnum P.I.’s favorite, combining exotic styling and spirited performance.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 17 -->
+      <div class="product-card" data-name="1970 Plymouth Barracuda" data-year="1970" data-desc="Mopar legend with an aggressive stance and roaring V8 power." data-price="48000">
+        <img src="../../../images/car17.jpg" alt="Car 17: 1970 Plymouth Barracuda" >
+        <h3>1970 Plymouth Barracuda</h3>
+        <p class="year">Year: 1970</p>
+        <p class="price">$48,000</p>
+        <p class="description">
+          Mopar legend with an aggressive stance and roaring V8 power.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 18 -->
+      <div class="product-card" data-name="1968 Pontiac GTO" data-year="1968" data-desc="The original muscle car that set the standard for high-performance coupes." data-price="38000">
+        <img src="../../../images/car18.jpg" alt="Car 18: 1968 Pontiac GTO" >
+        <h3>1968 Pontiac GTO</h3>
+        <p class="year">Year: 1968</p>
+        <p class="price">$38,000</p>
+        <p class="description">
+          The original muscle car that set the standard for high-performance coupes.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 19 -->
+      <div class="product-card" data-name="1983 Mazda RX-7" data-year="1983" data-desc="Rotary-powered sports car offering nimble handling and unique engineering." data-price="12000">
+        <img src="../../../images/car19.jpg" alt="Car 19: 1983 Mazda RX-7" >
+        <h3>1983 Mazda RX-7</h3>
+        <p class="year">Year: 1983</p>
+        <p class="price">$12,000</p>
+        <p class="description">
+          Rotary-powered sports car offering nimble handling and unique engineering.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+
+      <!-- Product Card 20 -->
+      <div class="product-card" data-name="1989 Volvo 240" data-year="1989" data-desc="Swedish reliability and boxy charm that made it a cult classic." data-price="7000">
+        <img src="../../../images/car20.jpg" alt="Car 20: 1989 Volvo 240" >
+        <h3>1989 Volvo 240</h3>
+        <p class="year">Year: 1989</p>
+        <p class="price">$7,000</p>
+        <p class="description">
+          Swedish reliability and boxy charm that made it a cult classic.
+        </p>
+        <div class="action-buttons">
+          <button class="buy-btn">Buy</button>
+          <button class="return-btn">Return</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PURCHASED ITEMS SECTION -->
+    <section class="purchased-section">
+      <h2>Your Purchased Items</h2>
+      <ul id="purchasedList">
+        <!-- Purchased items will be appended here -->
+      </ul>
+    </section>
+
+    <!-- NOTIFICATION AREA -->
+    <div id="notification" class="notification"></div>
+  </main>
+
+  <!-- Link to our custom JavaScript -->
+  <script src="/OURPROJECT/JavaScripts/product.js"></script>
+  <script src="/OURPROJECT/Global_HF/global.js"></script>
+
+</body>
+</html>
